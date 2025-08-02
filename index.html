@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Daniel – My QA Story</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -13,10 +13,10 @@
       font-size: 18px;
       color: #fff;
       background: url('img/pop-bg.jpg') center center/cover no-repeat fixed;
-      display: flex;
       height: 100vh;
-      overflow: hidden;
+      display: flex;
     }
+
     aside {
       width: 200px;
       background-color: rgba(0,0,0,0.7);
@@ -26,6 +26,7 @@
       align-items: center;
       justify-content: center;
     }
+
     aside button {
       background: none;
       border: 1px solid #fff;
@@ -39,24 +40,65 @@
       align-items: center;
       gap: 10px;
     }
+
     main {
       flex: 1;
       padding: 40px;
       overflow-y: auto;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0, 0, 0, 0.6);
     }
+
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       margin-bottom: 10px;
     }
+
     h2 {
-      margin-top: 40px;
+      margin-bottom: 30px;
     }
-    img {
-      max-width: 100%;
+
+    p {
+      line-height: 1.7;
       margin-bottom: 20px;
-      border-radius: 10px;
     }
+
+    .intro-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .intro-photo {
+      flex: 0 0 55%;
+      max-width: 55%;
+    }
+
+    .intro-photo img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    .intro-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .full-width-text {
+      width: 100%;
+    }
+
+    .full-width-img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 40px 0 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
     .modal {
       display: none;
       position: fixed;
@@ -72,9 +114,11 @@
       box-shadow: 0 0 20px #000;
       border-radius: 8px;
     }
+
     .modal h2 {
       margin-top: 0;
     }
+
     .modal-close {
       position: absolute;
       top: 10px;
@@ -85,23 +129,56 @@
       font-size: 1.5rem;
       cursor: pointer;
     }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      aside {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      main {
+        padding: 20px;
+      }
+      .intro-section {
+        flex-direction: column;
+      }
+      .intro-photo,
+      .intro-text {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
   </style>
 </head>
 <body>
   <aside>
-    <button onclick="openModal('skillsModal')"><i class="fas fa-toolbox"></i> My Skills</button>
-    <button onclick="openModal('projectsModal')"><i class="fas fa-code"></i> My Project</button>
-    <button onclick="openModal('contactModal')"><i class="fas fa-comments"></i> Contact</button>
+    <button onclick="openModal('skillsModal')"><i class="fas fa-toolbox"></i>My Skills</button>
+    <button onclick="openModal('projectsModal')"><i class="fas fa-code"></i>My Projects</button>
+    <button onclick="openModal('contactModal')"><i class="fas fa-comments"></i>Contact</button>
   </aside>
 
   <main>
     <h1>Daniel – My QA Story</h1>
-    <p>My personal journey into the world of Quality Assurance</p>
-    <img src="img/me_1.jpg" alt="Daniel Photo">
-    <p>My name is Daniel Gurevich, and I bring over 20 years of experience in computer repair and technical leadership. For most of my career, I managed computer labs and led technical teams, delivering fast and reliable solutions to hardware and software problems.</p>
-    <p>But even with all this hands-on experience, I realized I was missing something: a structured, forward-looking approach to software quality. That’s why I decided to study QA (Quality Assurance).</p>
-    <p>I’m now learning testing methodologies, test case design, and tools for both manual and automated testing. My goal is to combine my deep technical background with modern QA practices — and bring real value to development teams and end users alike.</p>
-    <img src="img/me_2.jpg" alt="Daniel Second Photo">
+    <h2>My personal journey into the world of Quality Assurance</h2>
+
+    <div class="intro-section">
+      <div class="intro-photo">
+        <img src="img/me_1.jpg" alt="Daniel Photo">
+      </div>
+      <div class="intro-text">
+        <p>My name is Daniel Gurevich, and I bring over 20 years of experience in computer repair and technical leadership. For most of my career, I managed computer labs and led technical teams, delivering fast and reliable solutions to hardware and software problems.</p>
+      </div>
+    </div>
+
+    <div class="full-width-text">
+      <p>But even with all this hands-on experience, I realized I was missing something: a structured, forward-looking approach to software quality. That’s why I decided to study QA (Quality Assurance).</p>
+      <p>I’m now learning testing methodologies, test case design, and tools for both manual and automated testing. My goal is to combine my deep technical background with modern QA practices — and bring real value to development teams and end users alike.</p>
+    </div>
+
+    <img src="img/me_2.jpg" alt="Daniel Second Photo" class="full-width-img">
   </main>
 
   <!-- Modals -->
@@ -139,8 +216,7 @@
 
   <script>
     function openModal(id) {
-      const modals = document.querySelectorAll('.modal');
-      modals.forEach(modal => modal.style.display = 'none');
+      document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
       document.getElementById(id).style.display = 'block';
     }
     function closeModal(id) {
