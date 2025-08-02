@@ -1,207 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>My QA Story</title>
-	<link rel="icon" href="img/favorite_icone.png" type="image/png"><!--תמונת לוגו-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="css/tooplate-style.css">
-    <script>
-        document.documentElement.className="js";
-        var supportsCssVars=function(){
-            var e,t=document.createElement("style");
-            return t.innerHTML="root: { --tmp-var: bold; }",
-            document.head.appendChild(t),
-            e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),
-            t.parentNode.removeChild(t),e
-        };
-        supportsCssVars()||alert("Please view this in a modern browser such as latest version of Chrome or Microsoft Edge.");
-    </script>
-</head>
-
-<body>
-<div id="tm-bg"></div>
-<div id="tm-wrap">
-    <div class="tm-main-content">
-        <div class="container tm-site-header-container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
-                    <div class="tm-site-header">
-                        <h1 class="mb-4">Daniel – My QA Story</h1>
-                        <img src="img/underline.png" class="img-fluid mb-4">
-                        <p>My personal journey into the world of Quality Assurance</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <div class="content">
-                        <div class="grid">
-
-                            <!-- ABOUT ME -->
-                            <div class="grid__item" id="home-link">
-                                <div class="product">
-                                    <div class="tm-nav-link">
-                                        <i class="fas fa-user fa-3x tm-nav-icon"></i>
-                                        <span class="tm-nav-text">About me</span>
-                                        <div class="product__bg"></div>
-                                    </div>
-                                    <div class="product__description">
-                                        <div class="row mb-3">
-                                            <div class="col-12">
-                                                <h2 class="tm-page-title">About Me</h2>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <img src="img/me_1.jpg" class="img-fluid mb-3">
-                                                <p>My name is Daniel Gurevich, and I bring over 20 years of experience in computer repair and technical leadership. For most of my career, I managed computer labs and led technical teams, delivering fast and reliable solutions to hardware and software problems.</p>
-                                                <p>But even with all this hands-on experience, I realized I was missing something: a structured, forward-looking approach to software quality. That’s why I decided to study QA (Quality Assurance).</p>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>I’m now learning testing methodologies, test case design, and tools for both manual and automated testing.</p>
-                                                <p>My goal is to combine my deep technical background with modern QA practices — and bring real value to development teams and end users alike.</p>
-                                                <img src="img/me_2.jpg" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- SKILLS -->
-                            <div class="grid__item" id="team-link">
-                                <div class="product">
-                                    <div class="tm-nav-link">
-                                        <i class="fas fa-toolbox  fa-3x tm-nav-icon"></i>
-                                        <span class="tm-nav-text">My Skills</span>
-                                        <div class="product__bg"></div>
-                                    </div>
-                                    <div class="product__description">
-                                        <div class="p-sm-4 p-2">
-                                            <div class="row mb-3">
-                                                <div class="col-12">
-                                                    <h2 class="tm-page-title">My QA Toolbox</h2>
-                                                </div>
-                                            </div>
-                                            <div class="row tm-reverse-sm">
-                                                <div class="col-md-8">
-                                                    <p class="mb-4 skill-item">Manual testing: test cases, bug reporting, and documentation (SRS, STD, STR)</p>
-                                                    <p class="mb-4 skill-item">Web & mobile testing, client-server architecture, and log analysis</p>
-                                                    <p class="mb-4 skill-item">Tools: JIRA, TestRail, Postman, DevTools</p>
-                                                    <p class="mb-4 skill-item">Basic automation with Python, Selenium, and Playwright</p>
-                                                    <p class="mb-4 skill-item">Web technologies: understanding of HTML, CSS, and browser behavior</p>
-                                                    <p class="mb-4 skill-item">SQL (basic queries), Git/GitHub, Agile workflows</p>
-                                                    <p class="mb-4 skill-item">Strong analytical thinking, attention to detail, and clear communication</p>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <img src="img/qatools.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- PROJECTS -->
-                            <div class="grid__item">
-                                <div class="product">
-                                    <div class="tm-nav-link">
-                                        <i class="fas fa-code fa-3x tm-nav-icon"></i>
-                                        <span class="tm-nav-text">My Project</span>
-                                        <div class="product__bg"></div>
-                                    </div>
-                                    <div class="product__description">
-                                        <div class="p-sm-4 p-2">
-                                            <div class="row mb-3">
-                                                <div class="col-12">
-                                                    <h2 class="tm-page-title">As part of my QA training, I'm building a small portfolio</h2>
-                                                </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-12">
-                                                    <p class="skill-item">Ctrl+Alt+Help – A personal website I created using HTML and CSS, with assistance on styling.</p>
-                                                    <p>It presents real-world computer problems and clear solutions, reflecting my background in tech support and my focus on user experience.</p>
-                                                    <h4><a href="https://danielg73.github.io/Ctr-Alt-Help/" target="_blank"><b>Link to "Ctrl+Alt+Help"</b></a></h4>
-                                                    <p class="skill-item">My QA Story Website – A personal one-page site built using an existing HTML/CSS template.</p>
-                                                    <p>It presents my professional background, reasons for choosing QA, and the skills I’m developing.</p>
-                                                    <h4><a href="https://danielg73.github.io/My-QA-Story/" target="_blank"><b>Link to "My QA Story"</b></a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- CONTACTS -->
-                            <div class="grid__item">
-                                <div class="product">
-                                    <div class="tm-nav-link">
-                                        <i class="fas fa-comments fa-3x tm-nav-icon"></i>
-                                        <span class="tm-nav-text">My Contacts</span>
-                                        <div class="product__bg"></div>
-                                    </div>
-                                    <div class="product__description">
-                                        <div class="pt-sm-4 pb-sm-4 pl-sm-5 pr-sm-5 pt-2 pb-2 pl-3 pr-3">
-                                            <div class="row mb-3">
-                                                <div class="col-12">
-                                                    <h2 class="tm-page-title">Contact Me</h2>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12">
-												<p>
-													<i class="fas fa-phone-alt"></i>
-													<a href="tel:+972547999476" style="margin-left: 8px;">+972-54-7999476</a>
-													</p>
-													<p>
-													<i class="fas fa-envelope"></i>
-													<a href="mailto:gurdany73@gmail.com" style="margin-left: 8px;">gurdany73@gmail.com</a>
-													</p>
-													<p>
-													<i class="fab fa-linkedin"></i>
-													<a href="https://www.linkedin.com/in/daniel-gur-045b0a374/" target="_blank" style="margin-left: 8px;">LinkedIn Profile</a>
-													</p>
-													<p>
-													<i class="fab fa-github"></i>
-													<a href="https://github.com/danielg73" target="_blank" style="margin-left: 8px;">GitHub Profile</a>
-													</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<script src="js/jquery-3.2.1.slim.min.js"></script>
-<script src="slick/slick.min.js"></script>
-<script src="js/anime.min.js"></script>
-<script src="js/main.js"></script>
-<script>
-    function setupFooter() {
-        var pageHeight = $('.tm-site-header-container').height() + $('footer').height() + 100;
-        var main = $('.tm-main-content');
-        if($(window).height() < pageHeight) {
-            main.addClass('tm-footer-relative');
-        } else {
-            main.removeClass('tm-footer-relative');
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel – My QA Story</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      color: #fff;
+      background: url('img/pop-bg.jpg') center center/cover no-repeat fixed;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
     }
-    $(function(){
-        setupFooter();
-        $(window).resize(function(){ setupFooter(); });
-        $('.tm-current-year').text(new Date().getFullYear());
-    });
-</script>
+    aside {
+      width: 200px;
+      background-color: rgba(0,0,0,0.7);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    aside button {
+      background: none;
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 1rem;
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    main {
+      flex: 1;
+      padding: 40px;
+      overflow-y: auto;
+      background-color: rgba(0,0,0,0.5);
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-top: 40px;
+    }
+    img {
+      max-width: 100%;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0,0,0,0.95);
+      padding: 30px;
+      max-width: 90%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 0 20px #000;
+      border-radius: 8px;
+    }
+    .modal h2 {
+      margin-top: 0;
+    }
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <aside>
+    <button onclick="openModal('skillsModal')"><i class="fas fa-toolbox"></i> My Skills</button>
+    <button onclick="openModal('projectsModal')"><i class="fas fa-code"></i> My Project</button>
+    <button onclick="openModal('contactModal')"><i class="fas fa-comments"></i> Contact</button>
+  </aside>
+
+  <main>
+    <h1>Daniel – My QA Story</h1>
+    <p>My personal journey into the world of Quality Assurance</p>
+    <img src="img/me_1.jpg" alt="Daniel Photo">
+    <p>My name is Daniel Gurevich, and I bring over 20 years of experience in computer repair and technical leadership. For most of my career, I managed computer labs and led technical teams, delivering fast and reliable solutions to hardware and software problems.</p>
+    <p>But even with all this hands-on experience, I realized I was missing something: a structured, forward-looking approach to software quality. That’s why I decided to study QA (Quality Assurance).</p>
+    <p>I’m now learning testing methodologies, test case design, and tools for both manual and automated testing. My goal is to combine my deep technical background with modern QA practices — and bring real value to development teams and end users alike.</p>
+    <img src="img/me_2.jpg" alt="Daniel Second Photo">
+  </main>
+
+  <!-- Modals -->
+  <div id="skillsModal" class="modal">
+    <button class="modal-close" onclick="closeModal('skillsModal')">&times;</button>
+    <h2>My Skills</h2>
+    <ul>
+      <li>Manual testing: test cases, bug reporting, and documentation (SRS, STD, STR)</li>
+      <li>Web & mobile testing, client-server architecture, and log analysis</li>
+      <li>Tools: JIRA, TestRail, Postman, DevTools</li>
+      <li>Basic automation with Python, Selenium, and Playwright</li>
+      <li>Web technologies: HTML, CSS, and browser behavior</li>
+      <li>SQL (basic queries), Git/GitHub, Agile workflows</li>
+      <li>Strong analytical thinking and clear communication</li>
+    </ul>
+  </div>
+
+  <div id="projectsModal" class="modal">
+    <button class="modal-close" onclick="closeModal('projectsModal')">&times;</button>
+    <h2>My Projects</h2>
+    <p><b>Ctrl+Alt+Help</b> – A personal website I created using HTML and CSS, with assistance on styling. It presents real-world computer problems and clear solutions.</p>
+    <p><a href="https://danielg73.github.io/Ctr-Alt-Help/" target="_blank">Link to Ctrl+Alt+Help</a></p>
+    <p><b>My QA Story</b> – A personal one-page site built using an HTML/CSS template, showcasing my background and current QA training.</p>
+    <p><a href="https://danielg73.github.io/My-QA-Story/" target="_blank">Link to My QA Story</a></p>
+  </div>
+
+  <div id="contactModal" class="modal">
+    <button class="modal-close" onclick="closeModal('contactModal')">&times;</button>
+    <h2>Contact Me</h2>
+    <p><i class="fas fa-phone-alt"></i> <a href="tel:+972547999476">+972-54-7999476</a></p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:gurdany73@gmail.com">gurdany73@gmail.com</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/daniel-gur-045b0a374/" target="_blank">LinkedIn</a></p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/danielg73" target="_blank">GitHub</a></p>
+  </div>
+
+  <script>
+    function openModal(id) {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => modal.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  </script>
 </body>
 </html>
